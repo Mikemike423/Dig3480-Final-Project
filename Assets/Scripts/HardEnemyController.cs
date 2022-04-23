@@ -100,6 +100,9 @@ public class HardEnemyController : MonoBehaviour
     //Public because we want to call it from elsewhere like the projectile script
     public void Fix()
     {
+        audioSource.clip = fixedClip;
+        audioSource.loop = false;
+        audioSource.Play();
         smoke.SetActive(false);
         broken = false;
         rigidbody2D.simulated = false;

@@ -23,6 +23,7 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         GameObject rubyControllerObject = GameObject.FindWithTag("RubyController"); //this line of code finds the RubyController script by looking for a "RubyController" tag on Ruby
         if (rubyControllerObject != null)
 
@@ -100,6 +101,9 @@ public class EnemyController : MonoBehaviour
     //Public because we want to call it from elsewhere like the projectile script
     public void Fix()
     {
+        audioSource.clip = fixedClip;
+        audioSource.loop = false;
+        audioSource.Play();
         smoke.SetActive(false);
         broken = false;
         rigidbody2D.simulated = false;
