@@ -170,6 +170,8 @@ MonoBehaviour:
   vertical: 1
   changeTime: 3
   smoke: {fileID: 6376197763403096875}
+  audioSource: {fileID: 8284763465966076389}
+  fixedClip: {fileID: 8300000, guid: 0e9d631386e2d7243bab63caf4554387, type: 3}
 --- !u!82 &8284763465966076389
 AudioSource:
   m_ObjectHideFlags: 0

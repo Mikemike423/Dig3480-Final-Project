@@ -152,6 +152,8 @@ MonoBehaviour:
   vertical: 1
   changeTime: 3
   smoke: {fileID: 905910305561073173}
+  audioSource: {fileID: 326083990}
+  fixedClip: {fileID: 8300000, guid: 0e9d631386e2d7243bab63caf4554387, type: 3}
 --- !u!95 &6312482171477195615
 Animator:
   serializedVersion: 3
@@ -283,6 +285,8 @@ MonoBehaviour:
   vertical: 0
   changeTime: 3
   smoke: {fileID: 905910305561073173}
+  audioSource: {fileID: 0}
+  fixedClip: {fileID: 0}
 --- !u!1001 &3079879280997548477
 PrefabInstance:
   m_ObjectHideFlags: 0
