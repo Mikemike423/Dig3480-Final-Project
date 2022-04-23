@@ -138,6 +138,7 @@ public class RubyController : MonoBehaviour
             level++;
             isDone = false;
             stateText.text = "You won level 1 \n Talk To Jambi By Pressing X to go to the next level!";
+            setGameState(1);
         }
 
         if (isDone && lost)
