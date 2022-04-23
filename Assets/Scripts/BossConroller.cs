@@ -11,7 +11,7 @@ public class BossConroller : MonoBehaviour
     Rigidbody2D rigidbody2D;
     float timer;
     bool shooting = false;
-    int bossHealth = 5;
+    int bossHealth = 3;
     bool broken = true;
     public GameObject smoke;
 
