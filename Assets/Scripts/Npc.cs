@@ -62,8 +62,9 @@ public class Npc : MonoBehaviour
         if (state == 1)
         {
             loadLevel();
+            rubyController.setGameState(0);
         }
-        //state one should create the battery box
+        //state two should create the battery box and state three should end the game
         if (state == 2)
         {
             timerDisplay = displayTime;
