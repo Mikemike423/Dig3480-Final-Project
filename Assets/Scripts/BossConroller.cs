@@ -73,7 +73,7 @@ public class BossConroller : MonoBehaviour
                 shooting = true;
                 GameObject projectileObject = Instantiate(bullet, gunPos, Quaternion.identity);
                 bullet projectile = projectileObject.GetComponent<bullet>();
-                projectile.Launch(transform.right, 150);
+                projectile.Launch(150);
                 animator.SetBool("shooting", false);
             }
             timer = changeTime;
