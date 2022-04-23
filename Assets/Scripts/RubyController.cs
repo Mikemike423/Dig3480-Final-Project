@@ -238,13 +238,6 @@ public class RubyController : MonoBehaviour
             won = true;
             return;
         }
-        if (numFix >= 4 && level == 2)
-        {
-            isDone = true;
-            won = true;
-            return;
-        }
-
     }
 
     void Launch()
@@ -281,5 +274,14 @@ public class RubyController : MonoBehaviour
     public int getLevel()
     {
         return level;
+    }
+
+    public void setGameState() {
+        if (numFix >= 4 && level == 2)
+        {
+            isDone = true;
+            won = true;
+            return;
+        }
     }
 }
