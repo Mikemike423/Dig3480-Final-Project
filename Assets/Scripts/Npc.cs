@@ -7,11 +7,12 @@ public class Npc : MonoBehaviour
 {
     public float displayTime = 4.0f;
     public GameObject dialogBox;
+    public GameObject dialogBox2;
     float timerDisplay;
     private RubyController rubyController;
     public int level;
     public GameObject item;
-    public int state;
+    public int state = 0;
 
     void Start()
     {
@@ -49,8 +50,16 @@ public class Npc : MonoBehaviour
 
     public void DisplayDialog()
     {
-        timerDisplay = displayTime;
-        dialogBox.SetActive(true);
+        if (state == 0)
+        {
+            timerDisplay = displayTime;
+            dialogBox.SetActive(true);
+        }
+        if (state == 1)
+        {
+            timerDisplay = displayTime;
+            dialogBox2.SetActive(true);
+        }
     }
 
     public void loadLevel(){
