@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FinalBossscript : MonoBehaviour
+public class BossConroller : MonoBehaviour
 {
     public float speed;
     public bool vertical;
@@ -69,8 +69,6 @@ public class FinalBossscript : MonoBehaviour
         {
             return;
         }
-
-        Vector2 position = rigidbody2D.position;
     }
 
     void OnCollisionEnter2D(Collision2D other)
