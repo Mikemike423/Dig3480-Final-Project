@@ -645,7 +645,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &137597823
 GameObject:
@@ -704,7 +704,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2
+  m_text: Hey push the battery box into my cool green house and then talk to me to
+    win.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -867,7 +868,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6279098408940673508, guid: ed2e17220e4ee26479d83d390bc594b4, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 6279098408940673508, guid: ed2e17220e4ee26479d83d390bc594b4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1054,7 +1055,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2
+  m_text: Hey the box is in front of me walk into it to push it. Push it all the
+    way to Jambi's house, and then talk to him to win!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1155,7 +1157,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 231019120}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.49, y: 0.42, z: 0}
+  m_LocalPosition: {x: 2.1, y: 0.63, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 768355139}
@@ -1725,7 +1727,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6279098408940673508, guid: ed2e17220e4ee26479d83d390bc594b4, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 6279098408940673508, guid: ed2e17220e4ee26479d83d390bc594b4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1838,9 +1840,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Hey this is my house its green. Cool right! Exept its out of power and
-    my submerine freind has the battery I need to fix it can you get it back for
-    me?
+  m_text: Hey I'm subby the submerine! Ill give you the battery box when you fix
+    all four robots!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2116,10 +2117,10 @@ CompositeCollider2D:
     - - X: -270000000
         Y: -180000000
       - X: -270000000
-        Y: 79999900
-      - X: 229999900
-        Y: 79999900
-      - X: 229999900
+        Y: 80000000
+      - X: 230000000
+        Y: 80000000
+      - X: 230000000
         Y: -180000000
     - - X: -50000000
         Y: 40000000
@@ -2129,40 +2130,32 @@ CompositeCollider2D:
         Y: 10000000
       - X: -50000000
         Y: 10000000
-    - - X: -89999900
-        Y: -170000041
-      - X: -89999900
-        Y: -139999959
-      - X: -89999959
-        Y: -139999900
-      - X: -180000041
-        Y: -139999900
-      - X: -180000100
-        Y: -139999959
-      - X: -180000100
-        Y: -170000041
-      - X: -180000041
-        Y: -170000100
-      - X: -89999959
-        Y: -170000100
+    - - X: -90000000
+        Y: -140000000
+      - X: -180000000
+        Y: -140000000
+      - X: -180000000
+        Y: -170000000
+      - X: -90000000
+        Y: -170000000
   m_CompositePaths:
     m_Paths:
     - - {x: 35.999973, y: -23}
       - {x: 35.999973, y: 15}
       - {x: -34, y: 14.999971}
       - {x: -33.999973, y: -23}
-    - - {x: 22.99999, y: -17.999971}
+    - - {x: 23, y: -17.999971}
       - {x: -27, y: -17.999971}
-      - {x: -26.999971, y: 7.9999905}
-      - {x: 22.99999, y: 7.999961}
+      - {x: -26.999971, y: 8}
+      - {x: 23, y: 7.9999704}
     - - {x: -5.000029, y: 1}
       - {x: -5.000029, y: 4}
       - {x: -10, y: 3.999971}
       - {x: -9.99997, y: 1}
-    - - {x: -9.000026, y: -17.00001}
-      - {x: -9.000026, y: -13.99999}
-      - {x: -18.00001, y: -14.000026}
-      - {x: -17.999975, y: -17.00001}
+    - - {x: -9.00003, y: -17}
+      - {x: -9.00003, y: -14}
+      - {x: -18, y: -14.000029}
+      - {x: -17.999971, y: -17}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!50 &677988766
@@ -29203,7 +29196,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &728418640
 PrefabInstance:
@@ -29214,7 +29207,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6279098408940673508, guid: ed2e17220e4ee26479d83d390bc594b4, type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 6279098408940673508, guid: ed2e17220e4ee26479d83d390bc594b4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -29706,7 +29699,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &985456626
 PrefabInstance:
@@ -29979,7 +29972,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6279098408940673508, guid: ed2e17220e4ee26479d83d390bc594b4, type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 6279098408940673508, guid: ed2e17220e4ee26479d83d390bc594b4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32085,7 +32078,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2013511454
 PrefabInstance:
