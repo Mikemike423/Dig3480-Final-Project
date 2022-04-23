@@ -25,8 +25,10 @@ public class batteryBox : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collider2D other) {
-        
+    void OnCollisionEnter2D(Collision2D other){
+        if(other.gameObject.tag == "froghouse") {
+            
+        }
     }
 
 }
