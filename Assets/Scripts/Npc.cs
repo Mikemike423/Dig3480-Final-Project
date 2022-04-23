@@ -11,6 +11,7 @@ public class Npc : MonoBehaviour
     private RubyController rubyController;
     public int level;
     public GameObject item;
+    public int state;
 
     void Start()
     {
