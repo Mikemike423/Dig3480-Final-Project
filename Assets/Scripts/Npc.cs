@@ -44,6 +44,7 @@ public class Npc : MonoBehaviour
             if (timerDisplay < 0)
             {
                 dialogBox.SetActive(false);
+                dialogBox2.SetActive(false);
             }
         }
     }
