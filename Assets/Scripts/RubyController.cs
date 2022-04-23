@@ -182,10 +182,6 @@ public class RubyController : MonoBehaviour
                 {
                     character.DisplayDialog();
                 }
-                else
-                {
-                    character.loadLevel();
-                }
             }
         }
     }
