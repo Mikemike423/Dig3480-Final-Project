@@ -59,6 +59,10 @@ public class Npc : MonoBehaviour
             timerDisplay = displayTime;
             dialogBox.SetActive(true);
         }
+        if (state == 1)
+        {
+            loadLevel();
+        }
         //state one should create the battery box
         if (state == 2)
         {
