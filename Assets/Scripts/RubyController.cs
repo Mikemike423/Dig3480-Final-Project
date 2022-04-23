@@ -178,7 +178,7 @@ public class RubyController : MonoBehaviour
             if (hit.collider != null)
             {
                 Npc character = hit.collider.GetComponent<Npc>();
-                if (character != null && level == 1)
+                if (character != null)
                 {
                     character.DisplayDialog();
                 }
