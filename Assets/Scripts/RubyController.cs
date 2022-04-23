@@ -69,7 +69,6 @@ public class RubyController : MonoBehaviour
         robotsFixed.text = "Fixed: " + numFix;
         ammoText.text = "Ammo: " + ammo;
 
-
         if (!isDone)
         {
             horizontal = Input.GetAxis("Horizontal");
