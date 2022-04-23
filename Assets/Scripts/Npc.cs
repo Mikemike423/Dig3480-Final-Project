@@ -38,6 +38,7 @@ public class Npc : MonoBehaviour
     void Update()
     {
         level = rubyController.getLevel();
+        //state = 
         if (timerDisplay >= 0)
         {
             timerDisplay -= Time.deltaTime;
