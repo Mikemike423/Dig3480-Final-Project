@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FinalBossscript : MonoBehaviour
 {
-public float speed;
+    public float speed;
     public bool vertical;
     public float changeTime = 3.0f;
 
