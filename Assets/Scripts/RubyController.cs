@@ -78,7 +78,7 @@ public class RubyController : MonoBehaviour
             return;
         }
 
-
+        //Handles movement if game is not done
         if (!isDone)
         {
             horizontal = Input.GetAxis("Horizontal");
@@ -109,6 +109,7 @@ public class RubyController : MonoBehaviour
             }
         }
 
+        //If win condition is reached
         if (isDone && won && level == 2)
         {
             stateText.gameObject.SetActive(true);
@@ -129,6 +130,7 @@ public class RubyController : MonoBehaviour
             }
         }
 
+        //If loss condition is reached
         if (isDone && won && level == 1)
         {
             stateText.gameObject.SetActive(true);
