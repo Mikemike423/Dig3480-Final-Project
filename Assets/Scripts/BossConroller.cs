@@ -63,11 +63,16 @@ public class BossConroller : MonoBehaviour
 
         if (timer < 0)
         {
+            if(shooting) {
+                shooting = false;
+            }
             if (!shooting)
             {
                 shooting = true;
                 GameObject projectileObject = Instantiate(bullet, gunPos, Quaternion.identity);
-                
+                bullet projectile = projectileObject.GetComponent<bullet>();
+                projectile.Launch(transform.right, 150);
+
             }
             timer = changeTime;
         }
