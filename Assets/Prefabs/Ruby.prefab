@@ -183,6 +183,9 @@ MonoBehaviour:
   winMusic: {fileID: 8300000, guid: 48dbd9b11295abb44b48e6b52c433202, type: 3}
   loseMusic: {fileID: 8300000, guid: 27cc373c6bbadb74aa12bd547fb3a8f3, type: 3}
   musicPlayed: 0
+  cogPickup: {fileID: 8300000, guid: 22405a7574a5e06419fc561e88796013, type: 3}
+  ammoText: {fileID: 0}
+  ammo: 4
 --- !u!82 &7718048766954731874
 AudioSource:
   m_ObjectHideFlags: 0
