@@ -64,7 +64,7 @@ public class BossConroller : MonoBehaviour
         {
             if(!shooting) {
                 shooting=true;
-                GameObject projectileObject = Instantiate(bullet, curPos + Vector2.up * 0.5f, Quaternion.identity);
+                GameObject projectileObject = Instantiate(bullet, this.transform.position + Vector2.up * 0.5f, Quaternion.identity);
 
                 Projectile projectile = bullet.GetComponent<Projectile>();
             }
