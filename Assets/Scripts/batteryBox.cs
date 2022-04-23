@@ -25,4 +25,8 @@ public class batteryBox : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter2D(Collider2D other) {
+        
+    }
+
 }
