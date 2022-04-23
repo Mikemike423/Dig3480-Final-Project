@@ -22,12 +22,11 @@ public class BossConroller : MonoBehaviour
     public AudioClip fixedClip;
 
     public GameObject bullet;
-    Vector3 curPos;
+    public Vector3 gunPos;
 
     // Start is called before the first frame update
     void Start()
     {
-        curPos = this.transform.position;
 
         GameObject rubyControllerObject = GameObject.FindWithTag("RubyController"); //this line of code finds the RubyController script by looking for a "RubyController" tag on Ruby
         if (rubyControllerObject != null)
@@ -62,9 +61,10 @@ public class BossConroller : MonoBehaviour
 
         if (timer < 0)
         {
-            if(!shooting) {
-                shooting=true;
-                GameObject projectileObject = Instantiate(bullet, this.transform.position + Vector2.up * 0.5f, Quaternion.identity);
+            if (!shooting)
+            {
+                shooting = true;
+                GameObject projectileObject = Instantiate(bullet, gunPos, Quaternion.identity);
 
                 Projectile projectile = bullet.GetComponent<Projectile>();
             }
