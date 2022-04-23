@@ -232,6 +232,7 @@ public class RubyController : MonoBehaviour
         }
         if (numFix >= 5 && level == 1)
         {
+            level++;
             setGameState(1);
             isDone = true;
             won = true;
