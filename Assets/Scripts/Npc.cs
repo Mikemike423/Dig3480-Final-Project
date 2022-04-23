@@ -60,7 +60,7 @@ public class Npc : MonoBehaviour
             dialogBox.SetActive(true);
         }
         //state one should create the battery box
-        if (state == 1)
+        if (state == 2)
         {
             timerDisplay = displayTime;
             dialogBox2.SetActive(true);
@@ -68,9 +68,9 @@ public class Npc : MonoBehaviour
             rubyController.setGameState(2);
         }
         //state two should be final state
-        if (state == 2)
+        if (state == 3)
         {
-            rubyController.setGameState(3);
+            rubyController.setGameState(4);
         }
     }
 
