@@ -1404,9 +1404,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 557936755627589526, guid: 0d9f40f2946e88c4da8c8c3b7d706c00, type: 3}
       propertyPath: m_text
-      value: Hey this is my house its green. Cool right! Exept its out of power and
-        my submerine freind has the battery I need to fix it can you get it back
-        for me?
+      value: Hey this is my house its green. Cool right! Except, its out of power
+        and my submerine freind has the battery box I need to fix it. Can you get
+        it back for me?
       objectReference: {fileID: 0}
     - target: {fileID: 557936755627589526, guid: 0d9f40f2946e88c4da8c8c3b7d706c00, type: 3}
       propertyPath: m_fontSize
