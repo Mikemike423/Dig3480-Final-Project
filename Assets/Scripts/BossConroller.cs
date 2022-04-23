@@ -63,7 +63,8 @@ public class BossConroller : MonoBehaviour
 
         if (timer < 0)
         {
-            if(shooting) {
+            if (shooting)
+            {
                 shooting = false;
             }
             if (!shooting)
