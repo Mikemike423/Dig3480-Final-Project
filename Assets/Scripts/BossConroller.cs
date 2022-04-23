@@ -85,13 +85,20 @@ public class BossConroller : MonoBehaviour
     //Public because we want to call it from elsewhere like the projectile script
     public void Fix()
     {
-        audioSource.clip = fixedClip;
-        audioSource.loop = false;
-        audioSource.Play();
-        smoke.SetActive(false);
-        broken = false;
-        rigidbody2D.simulated = false;
-        animator.SetTrigger("Fixed");
-        rubyController.ChangeScore(1);
+        if (bossHealth > 0)
+        {
+            bossHealth--;
+        }
+        else
+        {
+            audioSource.clip = fixedClip;
+            audioSource.loop = false;
+            audioSource.Play();
+            smoke.SetActive(false);
+            broken = false;
+            rigidbody2D.simulated = false;
+            animator.SetTrigger("Fixed");
+            rubyController.ChangeScore(1);
+        }
     }
 }
