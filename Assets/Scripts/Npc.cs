@@ -21,6 +21,7 @@ public class Npc : MonoBehaviour
         timerDisplay = -1.0f;
         GameObject rubyControllerObject = GameObject.FindWithTag("RubyController");
 
+        if (rubyController != null)
         {
 
             rubyController = rubyControllerObject.GetComponent<RubyController>();
