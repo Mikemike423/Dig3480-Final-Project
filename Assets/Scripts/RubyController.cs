@@ -131,14 +131,13 @@ public class RubyController : MonoBehaviour
             }
         }
 
-        //If loss condition is reached
+        //If win condition is reached
         if (isDone && won && level == 1)
         {
             stateText.gameObject.SetActive(true);
             level++;
             isDone = false;
             stateText.text = "You won level 1 \n Talk To Jambi By Pressing X to go to the next level!";
-            setGameState(1);
         }
 
         if (isDone && lost)
