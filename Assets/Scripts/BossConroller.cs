@@ -22,11 +22,13 @@ public class BossConroller : MonoBehaviour
     public AudioClip fixedClip;
 
     public GameObject bullet;
-    public Vector3 gunPos;
+    public GameObject gunArm;
+    Vector3 gunPos;
 
     // Start is called before the first frame update
     void Start()
     {
+        gunPos = gunArm.transform.position;
 
         GameObject rubyControllerObject = GameObject.FindWithTag("RubyController"); //this line of code finds the RubyController script by looking for a "RubyController" tag on Ruby
         if (rubyControllerObject != null)
