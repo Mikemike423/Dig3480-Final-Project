@@ -21,6 +21,8 @@ public class BossConroller : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip fixedClip;
 
+    GameObject 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,8 +61,10 @@ public class BossConroller : MonoBehaviour
         if (timer < 0)
         {
             if(!shooting) {
-                
                 shooting=true;
+                GameObject projectileObject = Instantiate(, rigidbody2d.position + Vector2.up * 0.5f, Quaternion.identity);
+
+                Projectile projectile = projectileObject.GetComponent<Projectile>();
             }
             timer = changeTime;
         }
