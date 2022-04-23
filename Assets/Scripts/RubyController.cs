@@ -227,7 +227,7 @@ public class RubyController : MonoBehaviour
 
     public void ChangeScore(int amount)
     {
-        if (numFix < 4)
+        if (numFix < 5)
         {
             numFix = numFix + amount;
             robotsFixed.text = "Fixed: " + numFix;
