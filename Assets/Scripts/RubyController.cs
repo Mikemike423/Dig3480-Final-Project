@@ -238,7 +238,7 @@ public class RubyController : MonoBehaviour
             won = true;
             return;
         }
-        if (numFix >= 5 && level == 2)
+        if (numFix >= 4 && level == 2)
         {
             isDone = true;
             won = true;
