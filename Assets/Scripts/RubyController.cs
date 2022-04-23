@@ -232,9 +232,9 @@ public class RubyController : MonoBehaviour
         }
         if (numFix >= 5 && level == 1)
         {
-            setGameState(1);
             isDone = true;
             won = true;
+            setGameState(1);
             return;
         }
         if (numFix >= 4 && level == 2)
