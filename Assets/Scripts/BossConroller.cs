@@ -27,7 +27,7 @@ public class BossConroller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        curPos = this.gameObject.GetC7
+        curPos = this.transform.position;
 
         GameObject rubyControllerObject = GameObject.FindWithTag("RubyController"); //this line of code finds the RubyController script by looking for a "RubyController" tag on Ruby
         if (rubyControllerObject != null)
@@ -64,7 +64,7 @@ public class BossConroller : MonoBehaviour
         {
             if(!shooting) {
                 shooting=true;
-                GameObject projectileObject = Instantiate(bullet, position + Vector2.up * 0.5f, Quaternion.identity);
+                GameObject projectileObject = Instantiate(bullet, curPos + Vector2.up * 0.5f, Quaternion.identity);
 
                 Projectile projectile = bullet.GetComponent<Projectile>();
             }
