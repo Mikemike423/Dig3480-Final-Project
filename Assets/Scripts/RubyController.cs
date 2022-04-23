@@ -69,6 +69,16 @@ public class RubyController : MonoBehaviour
         robotsFixed.text = "Fixed: " + numFix;
         ammoText.text = "Ammo: " + ammo;
 
+
+        //Makes it so the game is lost the moment zero health is reached
+        if (currentHealth <= 0)
+        {
+            isDone = true;
+            lost = true;
+            return;
+        }
+
+
         if (!isDone)
         {
             horizontal = Input.GetAxis("Horizontal");
@@ -204,13 +214,7 @@ public class RubyController : MonoBehaviour
             currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
 
             UiHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
-        }
-        else
-        {
-            isDone = true;
-            lost = true;
-            return;
-        }
+        }4
     }
 
     public void ChangeScore(int amount)
