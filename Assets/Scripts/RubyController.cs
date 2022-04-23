@@ -128,6 +128,8 @@ public class RubyController : MonoBehaviour
             {
                 SceneManager.LoadScene("Main");
                 level = 1;
+                isDone = false;
+                won = false;
             }
         }
 
