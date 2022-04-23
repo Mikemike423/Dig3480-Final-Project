@@ -285,7 +285,7 @@ public class RubyController : MonoBehaviour
     public void setGameState(int state)
     {
         gameState = state;
-        if (numFix >= 4 && level == 2 && gameState == 3)
+        if (gameState == 3)
         {
             isDone = true;
             won = true;
