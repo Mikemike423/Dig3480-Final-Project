@@ -240,6 +240,10 @@ public class RubyController : MonoBehaviour
             won = true;
             return;
         }
+        if (numFix >= 4 && level == 2)
+        {
+            setGameState(1);
+        }
     }
 
     void Launch()
