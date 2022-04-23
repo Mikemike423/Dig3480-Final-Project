@@ -20,7 +20,6 @@ public class Npc : MonoBehaviour
         dialogBox.SetActive(false);
         timerDisplay = -1.0f;
         GameObject rubyControllerObject = GameObject.FindWithTag("RubyController");
-
         if (rubyController != null)
         {
 
