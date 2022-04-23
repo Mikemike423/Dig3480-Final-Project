@@ -6,7 +6,7 @@ public class BossConroller : MonoBehaviour
 {
     public float speed;
     public bool vertical;
-    public float changeTime = 3.0f;
+    public float changeTime = 4.0f;
 
     Rigidbody2D rigidbody2D;
     float timer;
@@ -58,6 +58,10 @@ public class BossConroller : MonoBehaviour
 
         if (timer < 0)
         {
+            if(!shooting) {
+                
+                shooting=true;
+            }
             timer = changeTime;
         }
     }
