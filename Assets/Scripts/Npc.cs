@@ -60,7 +60,7 @@ public class Npc : MonoBehaviour
         {
             timerDisplay = displayTime;
             dialogBox2.SetActive(true);
-            Instantiate 
+            item.gameObject.SetActive();
         }
     }
 
