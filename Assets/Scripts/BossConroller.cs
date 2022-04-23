@@ -66,7 +66,7 @@ public class BossConroller : MonoBehaviour
                 shooting = true;
                 GameObject projectileObject = Instantiate(bullet, gunPos, Quaternion.identity);
 
-                projectileObject.
+                projectileObject.rigidbody2d.AddForce(direction * force);
             }
             timer = changeTime;
         }
