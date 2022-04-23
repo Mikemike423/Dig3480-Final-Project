@@ -30683,6 +30683,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1845788552}
     - target: {fileID: 557936755545540579, guid: 0d9f40f2946e88c4da8c8c3b7d706c00, type: 3}
+      propertyPath: itemPos
+      value: 
+      objectReference: {fileID: 1845788552}
+    - target: {fileID: 557936755545540579, guid: 0d9f40f2946e88c4da8c8c3b7d706c00, type: 3}
       propertyPath: dialogBox2
       value: 
       objectReference: {fileID: 557936755611788873}
