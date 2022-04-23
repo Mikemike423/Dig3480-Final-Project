@@ -34,11 +34,11 @@ public class bullet : MonoBehaviour
             {
                 player.ChangeHealth(-1);
             }
-            Destroy(this);
+            Destroy(this.gameObject);
         }
         if (other.gameObject.tag != "shooter")
         {
-            Destroy(this);
+            Destroy(this.gameObject);
         }
     }
 }
