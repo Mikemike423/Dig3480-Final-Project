@@ -232,7 +232,13 @@ public class RubyController : MonoBehaviour
             numFix = numFix + amount;
             robotsFixed.text = "Fixed: " + numFix;
         }
-        if (numFix >= 4)
+        if (numFix >= 4 && level == 1)
+        {
+            isDone = true;
+            won = true;
+            return;
+        }
+        if (numFix >= 5 && level == 2)
         {
             isDone = true;
             won = true;
