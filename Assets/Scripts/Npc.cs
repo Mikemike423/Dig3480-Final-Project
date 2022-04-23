@@ -38,7 +38,7 @@ public class Npc : MonoBehaviour
     void Update()
     {
         level = rubyController.getLevel();
-        //state = 
+        state = rubyController.getGameState();
         if (timerDisplay >= 0)
         {
             timerDisplay -= Time.deltaTime;
@@ -62,12 +62,13 @@ public class Npc : MonoBehaviour
             timerDisplay = displayTime;
             dialogBox2.SetActive(true);
             item.SetActive(true);
+            rubyController.setGameState(2);
         }
         if (state == 2)
         {
             timerDisplay = displayTime;
             dialogBox2.SetActive(true);
-            rubyController.setGameState();
+            rubyController.setGameState(3);
         }
     }
 
