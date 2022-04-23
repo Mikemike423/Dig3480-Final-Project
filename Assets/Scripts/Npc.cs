@@ -12,6 +12,7 @@ public class Npc : MonoBehaviour
     private RubyController rubyController;
     public int level;
     public GameObject item;
+    public GameObject itemPos;
     public int state = 0;
 
     void Start()
@@ -63,7 +64,7 @@ public class Npc : MonoBehaviour
         {
             timerDisplay = displayTime;
             dialogBox2.SetActive(true);
-            item.SetActive(true);
+            Instantiate(item, itemPos.transform.position, Quaternion.identity);
             rubyController.setGameState(2);
         }
         //state two should be final state
