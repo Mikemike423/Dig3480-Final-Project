@@ -60,11 +60,12 @@ public class Npc : MonoBehaviour
         {
             timerDisplay = displayTime;
             dialogBox2.SetActive(true);
-            item.gameObject.SetActive();
+            item.SetActive(true);
         }
     }
 
-    public void loadLevel(){
+    public void loadLevel()
+    {
         if (level == 2)
         {
             SceneManager.LoadScene("Level2");
