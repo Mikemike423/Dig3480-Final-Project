@@ -52,11 +52,13 @@ public class Npc : MonoBehaviour
 
     public void DisplayDialog()
     {
+        //state zero is base state and for level one
         if (state == 0)
         {
             timerDisplay = displayTime;
             dialogBox.SetActive(true);
         }
+        //state one should create the battery box
         if (state == 1)
         {
             timerDisplay = displayTime;
@@ -64,10 +66,9 @@ public class Npc : MonoBehaviour
             item.SetActive(true);
             rubyController.setGameState(2);
         }
+        //state two should be final state
         if (state == 2)
         {
-            timerDisplay = displayTime;
-            dialogBox2.SetActive(true);
             rubyController.setGameState(3);
         }
     }
