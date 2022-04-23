@@ -8,7 +8,21 @@ public class batteryBox : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject rubyControllerObject = GameObject.FindWithTag("RubyController");
+        if (rubyControllerObject != null)
+        {
+
+            rubyController = rubyControllerObject.GetComponent<RubyController>();
+
+            print("Npc can see player script");
+
+        }
+        if (rubyControllerObject == null)
+        {
+
+            print("Cant find player script");
+
+        }
     }
-    
+
 }

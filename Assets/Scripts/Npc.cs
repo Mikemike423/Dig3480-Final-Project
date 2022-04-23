@@ -20,7 +20,7 @@ public class Npc : MonoBehaviour
         dialogBox.SetActive(false);
         timerDisplay = -1.0f;
         GameObject rubyControllerObject = GameObject.FindWithTag("RubyController");
-        if (rubyController != null)
+        if (rubyControllerObject != null)
         {
 
             rubyController = rubyControllerObject.GetComponent<RubyController>();
@@ -28,7 +28,7 @@ public class Npc : MonoBehaviour
             print("Npc can see player script");
 
         }
-        if (rubyController == null)
+        if (rubyControllerObject == null)
         {
 
             print("Cant find player script");
