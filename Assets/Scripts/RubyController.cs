@@ -164,12 +164,13 @@ public class RubyController : MonoBehaviour
             }
         }
 
-
+        //quits out of the game
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Application.Quit();
         }
 
+        //handles talking to npcs
         if (Input.GetKeyDown(KeyCode.X))
         {
             RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position + Vector2.up * 0.2f, lookDirection, 1.5f, LayerMask.GetMask("NPC"));
@@ -216,7 +217,7 @@ public class RubyController : MonoBehaviour
             currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
 
             UiHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
-        }4
+        }
     }
 
     public void ChangeScore(int amount)
