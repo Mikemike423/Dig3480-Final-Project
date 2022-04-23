@@ -66,7 +66,7 @@ public class BossConroller : MonoBehaviour
             if (shooting)
             {
                 shooting = false;
-
+                animator.SetBool("shooting", false);
             }
             if (!shooting)
             {
@@ -75,7 +75,6 @@ public class BossConroller : MonoBehaviour
                 GameObject projectileObject = Instantiate(bullet, gunPos, Quaternion.identity);
                 bullet projectile = projectileObject.GetComponent<bullet>();
                 projectile.Launch(transform.right, 150);
-                animator.SetBool("shooting", false);
             }
             timer = changeTime;
         }
