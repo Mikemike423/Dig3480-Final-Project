@@ -46,6 +46,7 @@ public class RubyController : MonoBehaviour
     public AudioClip winMusic;
     public AudioClip loseMusic;
     public bool musicPlayed = false;
+    public AudioClip cogPickup;
 
     public TextMeshProUGUI ammoText;
     public int ammo = 4;
@@ -258,6 +259,7 @@ public class RubyController : MonoBehaviour
         {
             ammo = ammo + 3;
             Destroy(other.gameObject);
+            PlaySound(cogPickup);
         }
     }
 
