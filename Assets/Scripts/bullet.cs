@@ -26,8 +26,19 @@ public class bullet : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.tag == "RubyController") {
-            
+        if (other.gameObject.tag == "RubyController")
+        {
+            RubyController player = other.gameObject.GetComponent<RubyController>();
+
+            if (player != null)
+            {
+                player.ChangeHealth(-1);
+            }
+            Destroy(this);
+        }
+        if (other.gameObject.tag != "shooter")
+        {
+            Destroy(this);
         }
     }
 }
