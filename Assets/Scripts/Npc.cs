@@ -72,7 +72,7 @@ public class Npc : MonoBehaviour
             Instantiate(item, itemPos.transform.position, Quaternion.identity);
             rubyController.setGameState(2);
         }
-        //state two should be final state
+        //state three should be final state state four is only for making sure you talked to the npc
         if (state == 3)
         {
             rubyController.setGameState(4);
