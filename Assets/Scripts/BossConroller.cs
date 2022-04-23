@@ -70,8 +70,8 @@ public class BossConroller : MonoBehaviour
             }
             if (!shooting)
             {
-                shooting = true;
                 animator.SetBool("shooting", true);
+                shooting = true;
                 GameObject projectileObject = Instantiate(bullet, gunPos, Quaternion.identity);
                 bullet projectile = projectileObject.GetComponent<bullet>();
                 projectile.Launch(transform.right, 150);
