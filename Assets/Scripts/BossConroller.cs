@@ -19,7 +19,7 @@ public class BossConroller : MonoBehaviour
     private RubyController rubyController;
 
     public AudioSource audioSource;
-    public AudioClip fixedClip;
+    public AudioClip sfx;
 
     public GameObject bullet;
     public GameObject gunArm;
@@ -72,6 +72,7 @@ public class BossConroller : MonoBehaviour
             {
                 animator.SetBool("shooting", true);
                 shooting = true;
+                audioSource.clip = sfx;
                 audioSource.Play();
                 GameObject projectileObject = Instantiate(bullet, gunPos, Quaternion.identity);
                 bullet projectile = projectileObject.GetComponent<bullet>();
