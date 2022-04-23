@@ -72,11 +72,9 @@ public class RubyController : MonoBehaviour
 
 
         //Makes it so the game is lost the moment zero health is reached
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !isDone)
         {
-            isDone = true;
-            lost = true;
-            return;
+            ChangeHealth(0);
         }
 
         //Handles movement if game is not done
@@ -218,6 +216,12 @@ public class RubyController : MonoBehaviour
             currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
 
             UiHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
+        }
+        else
+        {
+            isDone = true;
+            lost = true;
+            return;
         }
     }
 
