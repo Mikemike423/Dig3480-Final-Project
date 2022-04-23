@@ -109,6 +109,7 @@ public class BossConroller : MonoBehaviour
         }
         else
         {
+            animator.SetBool("dead", true);
             smoke.SetActive(false);
             broken = false;
             rigidbody2D.simulated = false;
