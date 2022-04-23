@@ -91,13 +91,9 @@ public class BossConroller : MonoBehaviour
         }
         else
         {
-            audioSource.clip = fixedClip;
-            audioSource.loop = false;
-            audioSource.Play();
             smoke.SetActive(false);
             broken = false;
             rigidbody2D.simulated = false;
-            animator.SetTrigger("Fixed");
             rubyController.ChangeScore(1);
         }
     }
