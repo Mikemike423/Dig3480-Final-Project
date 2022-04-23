@@ -10,6 +10,7 @@ public class Npc : MonoBehaviour
     float timerDisplay;
     private RubyController rubyController;
     public int level;
+    public GameObject item;
 
     void Start()
     {
