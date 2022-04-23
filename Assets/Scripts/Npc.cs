@@ -53,7 +53,7 @@ public class Npc : MonoBehaviour
 
     public void DisplayDialog()
     {
-        //state zero is base state and for level one
+        //state zero is base state and state one is load level 2
         if (state == 0)
         {
             timerDisplay = displayTime;
