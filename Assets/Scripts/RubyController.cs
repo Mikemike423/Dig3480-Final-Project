@@ -51,6 +51,8 @@ public class RubyController : MonoBehaviour
     public TextMeshProUGUI ammoText;
     public int ammo = 4;
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -276,7 +278,7 @@ public class RubyController : MonoBehaviour
         return level;
     }
 
-    public void setGameState() {
+    public void setGameState(int state) {
         if (numFix >= 4 && level == 2)
         {
             isDone = true;
