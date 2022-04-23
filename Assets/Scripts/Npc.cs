@@ -62,6 +62,12 @@ public class Npc : MonoBehaviour
             dialogBox2.SetActive(true);
             item.SetActive(true);
         }
+        if (state == 2)
+        {
+            timerDisplay = displayTime;
+            dialogBox2.SetActive(true);
+            rubyController.setGameState();
+        }
     }
 
     public void loadLevel()
