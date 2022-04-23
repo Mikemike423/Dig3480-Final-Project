@@ -289,6 +289,7 @@ public class RubyController : MonoBehaviour
     public void setGameState(int state)
     {
         gameState = state;
+        print(gameState);
         if (gameState == 3)
         {
             isDone = true;
