@@ -10,7 +10,7 @@ public class BossConroller : MonoBehaviour
 
     Rigidbody2D rigidbody2D;
     float timer;
-    int direction = 1;
+    int state = 0;
     bool broken = true;
     public GameObject smoke;
 
@@ -57,7 +57,6 @@ public class BossConroller : MonoBehaviour
 
         if (timer < 0)
         {
-            direction = -direction;
             timer = changeTime;
         }
     }
@@ -70,12 +69,6 @@ public class BossConroller : MonoBehaviour
             return;
         }
         Vector2 position = rigidbody2D.position;
-
-        position.x = position.x + Time.deltaTime * speed * direction;
-        animator.SetFloat("Move X", direction);
-        animator.SetFloat("Move Y", 0);
-
-        rigidbody2D.MovePosition(position);
     }
 
     void OnCollisionEnter2D(Collision2D other)
