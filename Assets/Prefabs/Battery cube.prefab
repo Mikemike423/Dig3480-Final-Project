@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 480001876944466218}
   - component: {fileID: 1847846241641740628}
   - component: {fileID: 2054895327385605170}
+  - component: {fileID: 1421848000}
   m_Layer: 0
   m_Name: Battery cube
   m_TagString: battery
@@ -144,3 +145,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 159b5b6ba9e9e5f40a24d19f339502d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!61 &1421848000
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7671621967633767654}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.17568481, y: 0.46372032}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 1.31, y: 0.98}
+    newSize: {x: 1.31, y: 0.98}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9052613, y: 0.87483597}
+  m_EdgeRadius: 0

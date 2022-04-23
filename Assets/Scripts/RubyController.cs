@@ -289,7 +289,7 @@ public class RubyController : MonoBehaviour
     {
         gameState = state;
         print(gameState);
-        if (gameState == 3)
+        if (gameState == 4)
         {
             isDone = true;
             won = true;
